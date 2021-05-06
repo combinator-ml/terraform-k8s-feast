@@ -1,0 +1,3 @@
+module "feast" {
+  source = "../../"
+}
