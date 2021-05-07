@@ -21,13 +21,15 @@ resource "kubernetes_secret" "feast-postgres-secret" {
 }
 
 resource "helm_release" "feast" {
-  depends_on = [kubernetes_secret.feast-postgres-secret]
-
+  depends_on       = [kubernetes_secret.feast-postgres-secret]
   name             = var.name_prefix
-  chart            = "https://feast-helm-charts.storage.googleapis.com/feast-0.100.4.tgz"
+  repository       = local.feast_chart_repository
+  chart            = local.feast_chart_name
+  version          = local.feast_chart_version
   namespace        = var.namespace
   wait             = true
   create_namespace = true
+  lint             = true
   values = [
     yamlencode(local.feast_helm_values)
   ]
