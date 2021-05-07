@@ -1,8 +1,5 @@
 name: terraform
-on:
-  push:
-    paths:
-    - '**.tf'
+on: push
 env:
   TF_CHDIR: -chdir=examples/basic
 jobs:
