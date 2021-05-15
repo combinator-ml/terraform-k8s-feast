@@ -26,9 +26,7 @@ base:
     #!/bin/bash
     set -euo pipefail
     git clone https://github.com/combinator-ml/terraform-k8s-feast repo
-    cd repo
-    git fetch --all --tags
-    git checkout tags/0.0.0 -b working
+    cd repo/examples/testfaster
     terraform init
     KUBE_CONFIG_PATH=~/.kube/config terraform apply -auto-approve
 
@@ -53,7 +51,7 @@ launch:
   title: Feast
   buttons:
     - title: Jupyter
-      port: 8888
+      port: 31888
   homepage: |
     ## Follow the tutorial below
     Click the buttons above.
