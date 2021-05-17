@@ -1,4 +1,4 @@
-name: Pachyderm + Minio
+name: Feast - Combinator Component
 base:
   kernel_image: quay.io/testfaster/ignite-kernel
   os_dockerfile: |-
