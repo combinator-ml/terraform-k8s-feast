@@ -7,7 +7,6 @@ Feast terraform module for combinator.ml
 ```terraform
 module "feast" {
   source  = "combinator-ml/feast/k8s"
-  version = "0.0.0"
 }
 ```
 
