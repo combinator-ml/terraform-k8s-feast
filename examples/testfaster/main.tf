@@ -21,7 +21,7 @@ resource "kubernetes_service" "jupyter" {
     port {
       port        = 8888
       target_port = 8888
-      node_port   = 31888
+      node_port   = 30600
     }
     type = "NodePort"
   }

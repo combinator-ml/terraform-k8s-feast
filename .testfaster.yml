@@ -65,7 +65,7 @@ launch:
   title: Feast
   buttons:
     - title: Jupyter
-      port: 31888
+      port: 30600
   homepage: |
     ## Follow the tutorial below
     Click the buttons above.
