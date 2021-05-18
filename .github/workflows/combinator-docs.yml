@@ -40,9 +40,9 @@ jobs:
           cd ${COMBINATOR_PATH}
           git config --local user.name "${GIT_USERNAME}"
           git config --local user.email "${GIT_EMAIL}"
-          if [ -z "$(git status --porcelain)" ]; then 
+          if [ -z "$(git status --porcelain)" ]; then
             echo "Your docs are up-to-date, no PR required."
-          else 
+          else
             echo "Docs are out of date"
             git --no-pager diff
             git add .
