@@ -67,5 +67,10 @@ launch:
     - title: Jupyter
       port: 30600
   homepage: |
-    ## Follow the tutorial below
-    Click the buttons above.
+    ### Launch Jupyter
+
+    Once the component has launched, click on the Jupyter link. Feast does not have a UI by default. You will use Jupyter to interact with Feast via its API.
+
+    ### Example Notebook
+
+    Once inside Jupyter, browse to the minimal notebook, which is the [official example](https://github.com/feast-dev/feast/tree/v0.9-branch/examples/minimal). Follow the instructions in the notebook.
