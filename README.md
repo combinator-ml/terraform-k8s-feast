@@ -20,7 +20,7 @@ The fastest way to get started is to use the test drive functionality provided b
 
 ### Launch Jupyter
 
-Once the component has launched, click on the Jupyter link. Feast does not have a UI by default. You will use Jupyter to interact with Feast via its API.
+Once the component has launched, click on the Jupyter link. Feast does not come with a UI. You will use Jupyter to interact with Feast via its API.
 
 ### Example Notebook
 
